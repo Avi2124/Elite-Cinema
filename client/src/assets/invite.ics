@@ -1,0 +1,148 @@
+BEGIN:VCALENDAR
+METHOD:REQUEST
+PRODID:Microsoft Exchange Server 2010
+VERSION:2.0
+BEGIN:VTIMEZONE
+TZID:India Standard Time
+BEGIN:STANDARD
+DTSTART:16010101T000000
+TZOFFSETFROM:+0530
+TZOFFSETTO:+0530
+END:STANDARD
+BEGIN:DAYLIGHT
+DTSTART:16010101T000000
+TZOFFSETFROM:+0530
+TZOFFSETTO:+0530
+END:DAYLIGHT
+END:VTIMEZONE
+BEGIN:VEVENT
+ORGANIZER;CN=Shubham Dankhra:mailto:shubham.dankhra@webitoinfotech.com
+ATTENDEE;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=TRUE;CN=bhatiyaaks
+ hita303@gmail.com:mailto:bhatiyaakshita303@gmail.com
+ATTENDEE;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=TRUE;CN=tulsimanda
+ ni3268@gmail.com:mailto:tulsimandani3268@gmail.com
+ATTENDEE;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=TRUE;CN=chandan019
+ 283@gmail.com:mailto:chandan019283@gmail.com
+ATTENDEE;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=TRUE;CN=jainishdev
+ pura24@gmail.com:mailto:jainishdevpura24@gmail.com
+ATTENDEE;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=TRUE;CN=miral.g.sh
+ iroya@gmail.com:mailto:miral.g.shiroya@gmail.com
+ATTENDEE;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=TRUE;CN=vyombarot0
+ 604@gmail.com:mailto:vyombarot0604@gmail.com
+ATTENDEE;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=TRUE;CN=jigarmanda
+ l9898@gmail.com:mailto:jigarmandal9898@gmail.com
+ATTENDEE;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=TRUE;CN=janidevars
+ hi8@gmail.com:mailto:janidevarshi8@gmail.com
+ATTENDEE;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=TRUE;CN=avikitaliy
+ a2018@gmail.com:mailto:avikitaliya2018@gmail.com
+ATTENDEE;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=TRUE;CN=shreyawani
+ 2006@gmail.com:mailto:shreyawani2006@gmail.com
+ATTENDEE;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=TRUE;CN=vnmoradiya
+ 510@gmail.com:mailto:vnmoradiya510@gmail.com
+ATTENDEE;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=TRUE;CN=srushtigaj
+ era113@gmail.com:mailto:srushtigajera113@gmail.com
+ATTENDEE;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=TRUE;CN=goaplahir0
+ 06@gmail.com:mailto:goaplahir006@gmail.com
+ATTENDEE;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=TRUE;CN=mayankkane
+ riya15@gmail.com:mailto:mayankkaneriya15@gmail.com
+ATTENDEE;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=TRUE;CN=hetalprmar
+ 79@gmail.com:mailto:hetalprmar79@gmail.com
+ATTENDEE;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=TRUE;CN=dakshpatel
+ 3131@gmail.com:mailto:dakshpatel3131@gmail.com
+ATTENDEE;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=TRUE;CN=mehul11035
+ 9@gmail.com:mailto:mehul110359@gmail.com
+ATTENDEE;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=TRUE;CN=rudraprata
+ psinh15@gmail.com:mailto:rudrapratapsinh15@gmail.com
+ATTENDEE;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=TRUE;CN=patelnancy
+ 0650@gmail.com:mailto:patelnancy0650@gmail.com
+ATTENDEE;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=TRUE;CN=neetidarji
+ 5@gmail.com:mailto:neetidarji5@gmail.com
+ATTENDEE;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=TRUE;CN=parmarmana
+ v2406@gmail.com:mailto:parmarmanav2406@gmail.com
+ATTENDEE;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=TRUE;CN=mansigohil
+ 015@gmail.com:mailto:mansigohil015@gmail.com
+ATTENDEE;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=TRUE;CN=mohitnagpu
+ re557@gmail.com:mailto:mohitnagpure557@gmail.com
+ATTENDEE;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=TRUE;CN=chandan21b
+ tce07@karnavatiuniversity.edu.in:mailto:chandan21btce07@karnavatiuniversit
+ y.edu.in
+ATTENDEE;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=TRUE;CN=darshitpan
+ chal2610@gmail.com:mailto:darshitpanchal2610@gmail.com
+ATTENDEE;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=TRUE;CN=divympanch
+ al@gmail.com:mailto:divympanchal@gmail.com
+ATTENDEE;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=TRUE;CN=harigavhal
+ e@gmail.com:mailto:harigavhale@gmail.com
+ATTENDEE;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=TRUE;CN=niravdholi
+ ya31@gmail.com:mailto:niravdholiya31@gmail.com
+ATTENDEE;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=TRUE;CN=rudraxngrc
+ eo@gmail.com:mailto:rudraxngrceo@gmail.com
+ATTENDEE;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=TRUE;CN=mahigopani
+ 1@gmail.com:mailto:mahigopani1@gmail.com
+ATTENDEE;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=TRUE;CN=Atveek Dun
+ garani:mailto:atveek.dungarani@webitoinfotech.com
+ATTENDEE;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=TRUE;CN=shubhamdan
+ khara007@gmail.com:mailto:shubhamdankhara007@gmail.com
+ATTENDEE;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=TRUE;CN=shubham.we
+ bito@gmail.com:mailto:shubham.webito@gmail.com
+DESCRIPTION;LANGUAGE=en-US:\n______________________________________________
+ __________________________________\nMicrosoft Teams Need help?<https://aka
+ .ms/JoinTeamsMeeting?omkt=en-US>\nJoin the meeting now<https://teams.micro
+ soft.com/l/meetup-join/19%3ameeting_MDA1ZjRhYTMtZmQwOS00OGMyLTlhYjctMTY2Yj
+ kyNTkyNzI0%40thread.v2/0?context=%7b%22Tid%22%3a%2205619b25-91ce-40a8-8d85
+ -0cdf95966e41%22%2c%22Oid%22%3a%228a1ac66f-718b-4914-912c-788bb2a74a5d%22%
+ 7d>\nMeeting ID: 466 122 978 152 52\nPasscode: Td9Ki76p\n_________________
+ _______________\nFor organizers: Meeting options<https://teams.microsoft.c
+ om/meetingOptions/?organizerId=8a1ac66f-718b-4914-912c-788bb2a74a5d&tenant
+ Id=05619b25-91ce-40a8-8d85-0cdf95966e41&threadId=19_meeting_MDA1ZjRhYTMtZm
+ QwOS00OGMyLTlhYjctMTY2YjkyNTkyNzI0@thread.v2&messageId=0&language=en-US>\n
+ __________________________________________________________________________
+ ______\n
+UID:040000008200E00074C5B7101A82E00800000000FCBAA35A4F7ADC01000000000000000
+ 010000000614F30B9552A6E49888948DBDAD0648B
+SUMMARY;LANGUAGE=en-US:WIP Batch - 18 [ Node Js ] - Meeting 1
+DTSTART;TZID=India Standard Time:20260105T170000
+DTEND;TZID=India Standard Time:20260105T180000
+CLASS:PUBLIC
+PRIORITY:5
+DTSTAMP:20251231T121700Z
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+SEQUENCE:0
+LOCATION;LANGUAGE=en-US:Microsoft Teams Meeting
+X-MICROSOFT-CDO-APPT-SEQUENCE:0
+X-MICROSOFT-CDO-OWNERAPPTID:2124217544
+X-MICROSOFT-CDO-BUSYSTATUS:TENTATIVE
+X-MICROSOFT-CDO-INTENDEDSTATUS:BUSY
+X-MICROSOFT-CDO-ALLDAYEVENT:FALSE
+X-MICROSOFT-CDO-IMPORTANCE:1
+X-MICROSOFT-CDO-INSTTYPE:0
+X-MICROSOFT-ONLINEMEETINGINFORMATION:{"OnlineMeetingChannelId":null\,"Onlin
+ eMeetingProvider":3}
+X-MICROSOFT-SKYPETEAMSMEETINGURL:https://teams.microsoft.com/l/meetup-join/
+ 19%3ameeting_MDA1ZjRhYTMtZmQwOS00OGMyLTlhYjctMTY2YjkyNTkyNzI0%40thread.v2/
+ 0?context=%7b%22Tid%22%3a%2205619b25-91ce-40a8-8d85-0cdf95966e41%22%2c%22O
+ id%22%3a%228a1ac66f-718b-4914-912c-788bb2a74a5d%22%7d
+X-MICROSOFT-SCHEDULINGSERVICEUPDATEURL:https://api.scheduler.teams.microsof
+ t.com/teams/05619b25-91ce-40a8-8d85-0cdf95966e41/8a1ac66f-718b-4914-912c-7
+ 88bb2a74a5d/19_meeting_MDA1ZjRhYTMtZmQwOS00OGMyLTlhYjctMTY2YjkyNTkyNzI0@th
+ read.v2/0
+X-MICROSOFT-SKYPETEAMSPROPERTIES:{"cid":"19:meeting_MDA1ZjRhYTMtZmQwOS00OGM
+ yLTlhYjctMTY2YjkyNTkyNzI0@thread.v2"\,"rid":0\,"mid":0\,"uid":null\,"priva
+ te":true\,"type":0}
+X-MICROSOFT-DONOTFORWARDMEETING:FALSE
+X-MICROSOFT-DISALLOW-COUNTER:FALSE
+X-MICROSOFT-REQUESTEDATTENDANCEMODE:DEFAULT
+X-MICROSOFT-ISRESPONSEREQUESTED:TRUE
+X-MICROSOFT-LOCATIONDISPLAYNAME:Microsoft Teams Meeting
+X-MICROSOFT-LOCATIONSOURCE:None
+X-MICROSOFT-LOCATIONS:[{"DisplayName":"Microsoft Teams Meeting"\,"LocationA
+ nnotation":""\,"LocationUri":""\,"LocationStreet":""\,"LocationCity":""\,"
+ LocationState":""\,"LocationCountry":""\,"LocationPostalCode":""\,"Locatio
+ nFullAddress":""}]
+BEGIN:VALARM
+DESCRIPTION:REMINDER
+TRIGGER;RELATED=START:-PT15M
+ACTION:DISPLAY
+END:VALARM
+END:VEVENT
+END:VCALENDAR
