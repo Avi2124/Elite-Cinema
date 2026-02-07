@@ -1,10 +1,4 @@
-import {
-  ChartLineIcon,
-  IndianRupeeIcon,
-  PlayCircleIcon,
-  StarIcon,
-  UsersIcon,
-} from 'lucide-react';
+import {ChartLineIcon, IndianRupeeIcon, PlayCircleIcon, StarIcon, UsersIcon} from 'lucide-react';
 import React, { useEffect, useState } from 'react';
 import { dummyDashboardData } from '../../assets/assets';
 import Loading from '../../components/Loading';

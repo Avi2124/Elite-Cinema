@@ -66,7 +66,7 @@ const registerUser = async (req, res) => {
       email,
       phone,
       password: hashedPassword,
-      image: image || "https://i.pravatar.cc/150?img=12",
+      image: image || "https://t4.ftcdn.net/jpg/07/03/86/11/360_F_703861114_7YxIPnoH8NfmbyEffOziaXy0EO1NpRHD.jpg",
     });
     const user = await newUser.save();
     const token = createToken(user._id);

@@ -5,6 +5,7 @@ import Title from '../../components/admin/Title';
 import { dateFormat } from '../../lib/dateFormat';
 import BlurCircle from '../../components/BlurCircle';
 import { useAppContext } from '../../context/AppContext';
+import { Trash2 } from 'lucide-react';
 
 const ListShows = () => {
   const currency = import.meta.env.VITE_CURRENCY;
@@ -33,6 +34,23 @@ const ListShows = () => {
     }
   };
 
+  const handleDeleteShow = async (showId) => {
+    try {
+      const token = await getAdminToken();
+
+      const {data} = await axios.delete(`/api/admin/shows/${showId}`, {
+        headers: {Authorization: `Bearer ${token}`},
+      });
+      if(!data.success){
+        console.error(data.message);
+        return;
+      }
+      setShows((prev) => prev.filter((s) => s._id !== showId));
+    } catch (error) {
+      console.error("Delete show error:", error);
+    }
+  };
+
   useEffect(() => {
     const token = getAdminToken();
     if (token) {
@@ -43,18 +61,19 @@ const ListShows = () => {
   return !loading ? (
     <>
       <Title text1="List" text2="Shows" />
-      <div className="max-w-4xl mt-6 overflow-x-auto">
+      <div className="max-w-6xl mt-6 overflow-x-auto">
         <BlurCircle right="100px" left="180px" top="50px" />
         <table className="w-full border-collapse rounded-md overflow-hidden text-nowrap">
           <thead>
-            <tr className="bg-primary/20 text-left text-white">
-              <th className="p-2 font-medium pl-5">Movie Name</th>
+            <tr className="bg-primary/20 text-center text-white">
+              <th className="p-2 font-medium">Movie Name</th>
               <th className="p-2 font-medium">Show Time</th>
               <th className="p-2 font-medium">Total Bookings</th>
               <th className="p-2 font-medium">Earnings</th>
+              <th className="p-2 font-medium">Action</th>
             </tr>
           </thead>
-          <tbody className="text-sm font-light">
+          <tbody className="text-sm font-light text-center">
             {(shows || [])
               .filter((show) => show && show.movie) // ✅ extra guard in render
               .map((show, index) => {
@@ -73,16 +92,15 @@ const ListShows = () => {
                     key={show?._id ?? index}
                     className="border-b border-primary/10 bg-primary/5 even:bg-primary/10"
                   >
-                    <td className="p-2 min-w-45 pl-5">
-                      {movie?.title ?? 'Untitled'}
-                    </td>
-                    <td className="p-2">
-                      {dateFormat(show.showDateTime)}
-                    </td>
+                    <td className="p-2">{movie?.title ?? 'Untitled'}</td>
+                    <td className="p-2">{dateFormat(show.showDateTime)}</td>
                     <td className="p-2">{occupiedSeatsCount}</td>
+                    <td className="p-2">{currency} {earnings}</td>
                     <td className="p-2">
-                      {currency} {earnings}
-                    </td>
+                                <button onClick={() => handleDeleteShow(show._id)} className="text-red-500 hover:text-red-700">
+                                    <Trash2 className="w-5 h-5 cursor-pointer" />
+                                </button>
+                                </td>
                   </tr>
                 );
               })}

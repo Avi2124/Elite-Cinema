@@ -35,7 +35,7 @@ export const getDashboardData = async (req, res) => {
         const totalUser = await User.countDocuments();
 
         const dashboardData = {
-            totalBokings: bookings.length,
+            totalBookings: bookings.length,
             totalRevenue: bookings.reduce((acc, booking) => acc + booking.amount, 0),
             activeShows,
             totalUser
@@ -73,3 +73,54 @@ export const getAllBookings = async (req, res) => {
         res.json({success: false, message: error.message})        
     }
 }
+
+export const getAllUsers = async (req, res) => {
+  try {
+    const users = await User.find({})
+      .select("-password")       // do not send password
+      .sort({ createdAt: -1 });  // newest first
+
+    return res.status(200).json({
+      success: true,
+      users,                     // 👈 MUST be "users"
+    });
+  } catch (error) {
+    console.error("Error fetching users:", error);
+    return res.status(500).json({
+      success: false,
+      message: "Failed to fetch users",
+    });
+  }
+};
+
+export const deleteUser = async (req, res) => {
+  try {
+    const id = req.params.id;
+
+    const deleted = await User.findByIdAndDelete(id);
+
+    if (!deleted) {
+      return res.json({ success: false, message: "User not found" });
+    }
+
+    return res.json({ success: true, message: "User deleted successfully" });
+  } catch (error) {
+    console.log(error);
+    return res.json({ success: false, message: error.message });
+  }
+};
+
+export const deleteBooking = async (req, res) => {
+    try {
+        const id = req.params.id;
+        const deleted = await Booking.findByIdAndDelete(id);
+
+        if(!deleted){
+            return res.json({success: false, message:"Booking not found"});
+        }
+        return res.json({success: true, message: "Booking Deleted Successfully"});
+    } catch (error) {
+        console.error("deleteBooking error:", error);
+        return res.json({success: false, message: error.message});
+    }
+};

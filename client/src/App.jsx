@@ -18,6 +18,7 @@ import ListBookings from './pages/admin/ListBookings';
 import AdminLogin from './pages/admin/AdminLogin';
 import { useAppContext } from './context/AppContext';
 import Loading from './components/Loading';
+import ListUsers from './pages/admin/ListUsers';
 
 export const backendUrl = import.meta.env.VITE_BACKEND_URL
 
@@ -54,6 +55,7 @@ const App = () => {
           <Route path="add-shows" element={<AddShows />} />
           <Route path="list-shows" element={<ListShows />} />
           <Route path="list-bookings" element={<ListBookings />} />
+          <Route path="list-users" element={<ListUsers />} />
         </Route>
       </Routes>
       {!isAdminRoute && isAuthRoute && <Footer />}

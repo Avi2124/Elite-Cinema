@@ -167,3 +167,19 @@ export const getShow = async (req, res) => {
         res.json({ success: false, message: error.message });
     }
 };
+
+export const deleteShow = async (req, res) => {
+    try {
+        const showId = req.params.id;
+        const showExists = await Show.findById(showId);
+        if(!showExists){
+            return res.json({success: false, message: "Show not found",});
+        }
+
+        await Show.findByIdAndDelete(showId);
+        return res.json({success: true, message: "Show deleted successfully",});
+    } catch (error) {
+        console.error("deleteShow error:", error);
+        return res.json({success: false, message: error.message,});
+    }
+};
